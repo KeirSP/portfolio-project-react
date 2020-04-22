@@ -10,17 +10,15 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
-        <Router>
-          <Navigation />
-          <Switch>
-            <Route path="/about">
-              <Aboutme />
-            </Route>
-            <Route path="/project">
-              <Project />
-            </Route>
-          </Switch>
-        </Router>
+        <div className="container-fluid">
+          <Router>
+            <Navigation />
+            <Switch>
+              <Route path="/about" component={Aboutme} />
+              <Route path="/project" component={Project} />
+            </Switch>
+          </Router>
+        </div>
       </div>
     );
   }

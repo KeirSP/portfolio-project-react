@@ -1,13 +1,7 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Aboutme extends Component {
-  render() {
-    return (
-      <div>
-        <h1>This is about me page</h1>
-      </div>
-    );
-  }
+function Aboutme(props) {
+  return <div>title : {props.match.params.Aboutme}</div>;
 }
 
 export default Aboutme;

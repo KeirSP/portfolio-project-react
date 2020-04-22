@@ -1,14 +1,14 @@
 import React from "react";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
-function Navigation() {
+import { Link } from "react-router-dom";
+function Navigation(props) {
   return (
     <div>
-      <nav>
-        <ul>
-          <li>
+      <nav className="navbar" id="navigation">
+        <ul className="nav">
+          <li className="nav-item">
             <Link to="/about">About Me</Link>
           </li>
-          <li>
+          <li className="nav-item">
             <Link to="/project">Projects</Link>
           </li>
         </ul>
