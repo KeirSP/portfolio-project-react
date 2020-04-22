@@ -10,7 +10,10 @@ import { shallow } from "enzyme";
 describe("App", () => {
   it("should render a nav bar ", () => {
     const component = shallow(<App />);
-    //expect(component.exists(".navbar")).toEqual(true);
     expect(component.exists("Navigation")).toEqual(true);
+  });
+  it("should render two Routes", () => {
+    const component = shallow(<App />);
+    expect(component.find("Route").length).toEqual(2);
   });
 });
